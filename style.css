@@ -1,0 +1,98 @@
+ body {
+     width: 900px;
+ }
+
+ div {
+     display:flex;
+ }
+ 
+ .wrapper div {
+    /* display: flex; */
+    /* flex-direction: row;  */
+    /* justify-content: flex-start;
+    flex-basis: 0; */
+}
+
+.icons div {
+    /* display: flex; */
+    /* justify-self: flex-end; */
+}
+
+.header div {
+    display: flex;
+    justify-self: flex-start;
+}
+
+div .header #delicious {
+    display: flex;
+}
+
+.header {
+    grid-area: right;
+}
+
+.icons {
+    grid-area: left;
+    justify-self: end;
+    align-items: flex-end;
+}
+
+div.posted {
+    grid-area: right;
+}
+
+div.print {
+    grid-area: left;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "right left"
+    "right icons"
+}
+
+div.css-table {
+    display: flex;
+    justify-content: space-between;
+    background-image: url(img/list-bg.png);
+}
+div ul {
+    font-family: comic, sans-serif;
+    list-style: none;
+}
+
+div li.left {
+    z-index: 2;
+}
+
+div li.right {
+    z-index: 2;
+}
+
+div .background-container {
+    width: 900px;
+    height: 14px;
+    background-image: url(img/hr-img.png);
+
+}
+
+button {
+    background-color: salmon;
+    text-transform: uppercase;
+    justify-content: flex-end;
+}
+
+article {
+    text-indent: 1.5em;
+}
+
+div.print {
+    align-items: flex-end;
+}
+
+footer {
+    justify-content: flex-end;
+}
