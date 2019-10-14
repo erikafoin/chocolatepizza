@@ -27,10 +27,6 @@ div .header #delicious {
     display: flex;
 }
 
-/* .floater {
-    float: left;
-    grid-area: float;
-} */
 .header {
     grid-area: right;
 }
@@ -86,6 +82,7 @@ div .background-container {
 button {
     background-color: salmon;
     text-transform: uppercase;
+    justify-content: flex-end;
 }
 
 article {
@@ -94,4 +91,8 @@ article {
 
 div.print {
     align-items: flex-end;
+}
+
+footer {
+    justify-content: flex-end;
 }
