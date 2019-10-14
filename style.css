@@ -1,3 +1,7 @@
+ body {
+     width: 900px;
+ }
+ 
  .wrapper div {
     /* display: flex; */
     /* flex-direction: row;  */
@@ -15,6 +19,10 @@
     justify-self: flex-start;
 }
 
+div .header #delicious {
+    display: flex;
+}
+
 /* .floater {
     float: left;
     grid-area: float;
@@ -24,8 +32,9 @@
 }
 
 .icons {
-    /* grid-area: left;
-    justify-self: end; */
+    grid-area: left;
+    justify-self: end;
+    align-items: flex-end;
 }
 
 .posted {
@@ -38,23 +47,42 @@
 
 .wrapper {
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
     "right left"
-    "right left"
+    "right icons"
 }
 
 div .ingredients {
     display: flex;
-    align-items: center
+    align-content: center no-repeat;
+    justify-content: space-between;
 }
 
-div .left {
+div ul .left {
     width: 50%;
     padding: 10px;
 }
 
-div .right {
+div ul .right {
+    width: 50%;
     margin-right: 20px;
+}
+
+#css-table {
+    display: table;
+}
+
+#css-table .col {
+    display: table-cell;
+    width: 50%;
+    padding: 10px;
+  }
+
+div .background-container {
+    width: 900px;
+    height: 14px;
+    background-image: url(img/hr-img.png);
+
 }
