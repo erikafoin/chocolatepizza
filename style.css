@@ -1,6 +1,10 @@
  body {
      width: 900px;
  }
+
+ div {
+     display:flex;
+ }
  
  .wrapper div {
     /* display: flex; */
@@ -37,11 +41,11 @@ div .header #delicious {
     align-items: flex-end;
 }
 
-.posted {
+div.posted {
     grid-area: right;
 }
 
-.print {
+div.print {
     grid-area: left;
 }
 
@@ -54,42 +58,40 @@ div .header #delicious {
     "right icons"
 }
 
-div .ingredients {
+div.css-table {
     display: flex;
-    flex-direction: column;
-    align-content: center no-repeat;
     justify-content: space-between;
+    background-image: url(img/list-bg.png);
 }
 div ul {
     font-family: comic, sans-serif;
     list-style: none;
 }
 
-div li .left {
-    width: 50%;
-    align-content: flex-start; */
+div li.left {
     z-index: 2;
 }
 
-div li .right {
-    width: 50%;
-    align-content: flex-start; */
+div li.right {
     z-index: 2;
 }
-
-#css-table {
-    display: table;
-}
-
-#css-table .col {
-    display: table-cell;
-    width: 50%;
-    padding: 10px;
-  }
 
 div .background-container {
     width: 900px;
     height: 14px;
     background-image: url(img/hr-img.png);
 
+}
+
+button {
+    background-color: salmon;
+    text-transform: uppercase;
+}
+
+article {
+    text-indent: 1.5em;
+}
+
+div.print {
+    align-items: flex-end;
 }
