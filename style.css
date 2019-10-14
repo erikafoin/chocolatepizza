@@ -1,0 +1,7 @@
+.wrapper div {
+    display: grid;
+    grid-template-columns: 1fr 4fr 3fr;
+    background-color: gray;
+    border: 1px black;
+    space-between: 5em;
+}
