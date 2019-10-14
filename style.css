@@ -56,18 +56,25 @@ div .header #delicious {
 
 div .ingredients {
     display: flex;
+    flex-direction: column;
     align-content: center no-repeat;
     justify-content: space-between;
 }
-
-div ul .left {
-    width: 50%;
-    padding: 10px;
+div ul {
+    font-family: comic, sans-serif;
+    list-style: none;
 }
 
-div ul .right {
+div li .left {
     width: 50%;
-    margin-right: 20px;
+    align-content: flex-start; */
+    z-index: 2;
+}
+
+div li .right {
+    width: 50%;
+    align-content: flex-start; */
+    z-index: 2;
 }
 
 #css-table {
